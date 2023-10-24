@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    background: #020A18;
+
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.main {}
+
+.header {
+    padding-top: 39px;
+    padding-bottom: 39px;
+}
+
+.header__link {}
+
+.top__content {
+    margin-top: 160px;
+    margin-bottom: 197px;
+}
+
+.top__info {}
+
+.heading__top__info {
+    margin-bottom: 10px;
+}
+
+.title__top__info {
+    margin-bottom: 40px;
+}
+
+.text__top__info {}
+
+.top__buttons {
+    margin-top: 50px;
+}
+
+.top__info__buttons {}
