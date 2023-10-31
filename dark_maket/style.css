@@ -176,15 +176,33 @@ body {
 }
 
 /*
-блок feature
-сфлексила 3 коробочки с gapom 30px, внутренними paddingaми 30px
-во внутренних коробках свой флекс, направление по вертикали, расположение по центру, внутр gap 30 px
-
-не получился градиент, цвет задавала по глазок, поправить
+блок items
 
 */
+.grid {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    gap: 30px;
+}
 
-.feature-subtitle {
+.item {
+    border-radius: 10px;
+    background: #132035;
+    padding: 30px;
+    display: grid;
+    justify-items: center;
+    gap: 30px;
+}
+
+.item-big {
+    grid-row: span 2;
+    grid-column: span 2;
+    padding-bottom: 60px;
+    gap: 60px;
+}
+
+.subtitle-item {
     color: var(--ffffff, #FFF);
     text-align: center;
     font-family: Open Sans;
@@ -192,11 +210,10 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: 125%;
-    /* 31.25px */
-    opacity: 0.7;
+    opacity: 0.7
 }
 
-.feature-dscr {
+.item-text {
     color: var(--ffffff, #FFF);
     text-align: center;
     font-family: Open Sans;
@@ -204,34 +221,17 @@ body {
     font-style: normal;
     font-weight: 600;
     line-height: 160%;
-    /* 25.6px */
-    opacity: 0.7;
+    opacity: 0.7
 }
 
-.flex-feature {
-    display: flex;
-    justify-content: stretch;
-    gap: 30px;
-}
-
-.feature-left, .feature-right, .feature-center {
-    border-radius: 10px;
-    /*
-    opacity: 0.1;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.20) -41.9%, #FFF 115.68%);
-*/
-    background: #06152e;
-    backdrop-filter: blur(100px);
-    padding: 30px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.feature {
+.items {
     margin-bottom: 257px;
 }
+
+
+/*
+last
+*/
 
 .last-subtitle {
     margin-top: 13px;
