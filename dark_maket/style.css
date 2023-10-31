@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #020A18;
+}
+
+/*
+здесь центрируем контенет
+*/
+.container {
+    margin: 0 auto;
+    width: 1146px;
+
+}
+
+.header-link {
+    color: var(--ffffff, #FFF);
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none;
+    padding: 39px 0px;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.header-link:hover {
+    color: #3A68B8
+}
+
+.header {
+    margin-bottom: 160px;
+}
+
+.subtitle {
+    color: var(--3-a-68-b-8, #3A68B8);
+    font-family: Open Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    /* 28.8px */
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.title {
+    color: var(--ffffff, #FFF);
+    font-family: Open Sans;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 130%;
+    /* 71.5px */
+    margin-bottom: 40px;
+
+}
+
+.dscr {
+    color: var(--ffffff, #FFF);
+    font-family: Open Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    /* 28.8px */
+    opacity: 0.7;
+    margin-bottom: 50px;
+}
+
+.main-button {
+    color: var(--ffffff, #FFF);
+    font-family: Open Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    /* 28.8px */
+    border-radius: 5px;
+    background: var(--3-a-68-b-8, #3A68B8);
+    padding: 1rem 2rem;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.fa-play {
+    margin-right: 10px;
+}
+
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.main-left, .main-right {
+    width: 49%;
+}
+
+.main-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main {
+    margin-bottom: 197px;
+}
+
+.logo {
+    margin-bottom: 256px;
+}
+
+/*
+тут, чтобы отпустить заголовок, сделала ему margin-top, вычисляла (366-256)
+
+сделала новый класс .about-flex, с gapом 68px
+*/
+.about-subtitle {
+    color: var(--ffffff, #FFF);
+    font-family: Open Sans;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    /* 52px */
+    margin-bottom: 30px;
+    margin-top: 110px;
+}
+
+.about-dscr {
+    color: var(--ffffff, #FFF);
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    /* 25.6px */
+    opacity: 0.7;
+    margin-bottom: 50px;
+    margin-right: 24px;
+
+}
+
+.about-button {
+    border-radius: 5px;
+    background: var(--3-a-68-b-8, #3A68B8);
+    color: var(--ffffff, #FFF);
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 1rem 2rem;
+    text-decoration: none;
+}
+
+.flex-about {
+    display: flex;
+    justify-content: stretch;
+    gap: 68px;
+}
+
+.about {
+    margin-bottom: 264px;
+}
+
+/*
+блок feature
+сфлексила 3 коробочки с gapom 30px, внутренними paddingaми 30px
+во внутренних коробках свой флекс, направление по вертикали, расположение по центру, внутр gap 30 px
+
+не получился градиент, цвет задавала по глазок, поправить
+
+*/
+
+.feature-subtitle {
+    color: var(--ffffff, #FFF);
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%;
+    /* 31.25px */
+    opacity: 0.7;
+}
+
+.feature-dscr {
+    color: var(--ffffff, #FFF);
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    /* 25.6px */
+    opacity: 0.7;
+}
+
+.flex-feature {
+    display: flex;
+    justify-content: stretch;
+    gap: 30px;
+}
+
+.feature-left, .feature-right, .feature-center {
+    border-radius: 10px;
+    /*
+    opacity: 0.1;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.20) -41.9%, #FFF 115.68%);
+*/
+    background: #06152e;
+    backdrop-filter: blur(100px);
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.feature {
+    margin-bottom: 257px;
+}
+
+.last-subtitle {
+    margin-top: 13px;
+    margin-bottom: 40px;
+    color: var(--ffffff, #FFF);
+    font-family: Open Sans;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    /* 52px */
+}
+
+.last-text, .last-text-end {
+
+    margin-right: 113px;
+    color: var(--ffffff, #FFF);
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    /* 25.6px */
+    opacity: 0.7;
+}
+
+.last-text {
+    margin-bottom: 20px;
+}
+
+.last-text-end {
+    margin-bottom: 13px;
+}
+
+.last {
+    margin-bottom: 221px;
+}
+
+/*
+в футере флекс из трех коробок, в каждой из которых флекс, а в правой два флекса
+матрешка получается какая-то
+*/
+.footer {
+    padding-top: 48px;
+    padding-bottom: 46px;
+}
+
+.footer-h6 {
+    margin-bottom: 33px;
+    color: var(--ffffff, #FFF);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.footer-text {
+    color: var(--ffffff, #FFF);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.fa-regular, .fa-light {
+    margin-right: 9px;
+}
+
+
+.footer-text-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    gap: 24px;
+}
+
+.footer-text-center {
+    color: var(--ffffff, #FFF);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 100;
+    line-height: normal;
+    opacity: 0.6;
+    padding-right: 101px;
+}
+
+.footer-right-images {
+    display: flex;
+    justify-content: flex-start;
+    gap: 24px;
+}
+
+.footer-left, .footer-center, .footer-right {
+    width: 33%;
+}
