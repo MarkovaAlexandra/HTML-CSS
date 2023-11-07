@@ -4,8 +4,13 @@
     box-sizing: border-box;
 }
 
+
 body {
     font-family: 'Lato', sans-serif;
+}
+
+img {
+    max-width: 100%;
 }
 
 .center {
@@ -17,6 +22,7 @@ body {
     background-color: #222222;
     padding-top: 18px;
     padding-bottom: 19px;
+
 }
 
 .fa {
@@ -31,7 +37,7 @@ body {
 .header-flex {
     display: flex;
     justify-content: space-between;
-    gap: 859px;
+
     align-items: center;
 }
 
@@ -96,73 +102,57 @@ body {
     width: 377px;
 }
 
-.offers {
+.sale {
     padding-bottom: 96px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
 }
 
-.backgrounds {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
+.sale_item {
+    position: relative;
 }
 
-.for_women {
-    background-image: url("img/for_women.svg");
-    width: 32%;
-    height: 260px;
-    display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-bottom: 30px;
-}
-
-.for_men {
-    background-image: url("img/for_men.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 32%;
-    height: 260px;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 30px;
-}
-
-.for_kids {
-    background-image: url("img/for_kids.svg");
-    height: 260px;
-    width: 32%;
-    height: 260px;
-    display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-bottom: 30px;
-}
-
-.acessories {
-    background-image: url("img/acessories.svg");
-    height: 180px;
+.sale_content {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
     display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    margin-bottom: 96px;
+    justify-content: center;
+    align-items: center;
+}
+
+.sale_item_long {
+    position: relative;
+    grid-column: span 3;
 }
 
 
-.heading_for {
+
+
+
+.sale__text {
+    color: #FFF;
+
+    text-align: center;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.sale__heading {
     color: #F16D7F;
     font-family: Lato;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    text-align: center;
 }
 
 .items-parent {
@@ -254,4 +244,15 @@ body {
     padding: 1rem 2rem;
     border: 1px solid #F26376;
     text-decoration: none;
+}
+
+@media(max-width: 1024px) {
+    .center {
+        padding-left: calc(50% - 376px);
+        padding-right: calc(50% - 376px);
+    }
+
+    .item {
+        width: 49%;
+    }
 }
