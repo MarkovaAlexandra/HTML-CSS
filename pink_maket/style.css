@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.center {
+    padding-left: calc(50% - 570px);
+    padding-right: calc(50% - 570px);
+}
+
+.header {
+    background-color: #222222;
+    padding-top: 18px;
+    padding-bottom: 19px;
+}
+
+.fa {
+    color: white;
+    width: 50px;
+}
+
+.fa-magnifying-glass {
+    padding-left: 41px;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 859px;
+    align-items: center;
+}
+
+.header-right, .header-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.just-for-break {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px solid red;
+}
+
+.header-maket-left {
+    display: flex;
+    gap: 41px;
+    align-items: flex-end;
+}
+
+.main {
+    background-color: #F1E4E6;
+    display: flex;
+    margin-bottom: 65px;
+}
+
+.main-left {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.main-right {
+    width: 50%;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.big {
+    color: #222;
+    font-family: Lato;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+
+
+
+.main-title {
+    color: #222;
+    font-family: Lato;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 377px;
+}
+
+.offers {
+    padding-bottom: 96px;
+}
+
+.backgrounds {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.for_women {
+    background-image: url("img/for_women.svg");
+    width: 32%;
+    height: 260px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.for_men {
+    background-image: url("img/for_men.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 32%;
+    height: 260px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.for_kids {
+    background-image: url("img/for_kids.svg");
+    height: 260px;
+    width: 32%;
+    height: 260px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.acessories {
+    background-image: url("img/acessories.svg");
+    height: 180px;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 96px;
+}
+
+.offer {
+    color: #FFF;
+    text-align: center;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.heading_for {
+    color: #F16D7F;
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.items-parent {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 48px;
+}
+
+.background-pink {
+    height: 420px;
+    background-color: #F7E4E2;
+    display: flex;
+    justify-content: center;
+}
+
+.items-title {
+    margin-bottom: 6px;
+    color: #222;
+    font-family: Lato;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+.items-text {
+    color: #9F9F9F;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 49px;
+    text-align: center;
+}
+
+.item {
+    background-color: #F8F8F8;
+    width: 32%;
+    margin-bottom: 30px;
+
+}
+
+.items-subtitle {
+    padding-top: 24px;
+    padding-bottom: 12px;
+    color: #000;
+    font-family: Lato;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.item-dscr {
+    color: #5D5D5D;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding-bottom: 18px;
+}
+
+.price {
+    color: #F16D7F;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+.pink_button {
+    color: #F26376;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    line-height: normal;
+    padding: 1rem 2rem;
+    border: 1px solid #F26376;
+    text-decoration: none;
+}

@@ -1,0 +1,12 @@
+.first {
+    border: solid black 1px;
+    max-width: 1200px;
+    background-color: blueviolet;
+}
+
+.second {
+    border: solid green 3px;
+    max-width: 1000px;
+
+
+}

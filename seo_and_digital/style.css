@@ -143,6 +143,13 @@ top_content
 }
 
 /*
+solution
+*/
+.solution {
+    background: #FAFAFA;
+}
+
+/*
 third_section
 */
 
@@ -189,8 +196,11 @@ third_section
 /*
 fourth_sec
 */
-.fourth_sec {
+.violet_background {
     background: #FAFAFA;
+}
+
+.fourth_sec {
     padding-top: 92px;
     padding-bottom: 100px;
     display: grid;
