@@ -1,0 +1,24 @@
+p:hover {
+    color: red;
+}
+
+.root {
+    list-style-type: none;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 10px;
+}
+
+.root:hover .dropdown {
+    display: block;
+}
+
+.dropdown>li {
+    cursor: pointer;
+}

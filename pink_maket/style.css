@@ -89,7 +89,9 @@ img {
     line-height: normal;
 }
 
-
+.pink {
+    color: #F16D7F;
+}
 
 
 .main-title {
@@ -123,16 +125,13 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: rgba(33, 22, 22, 0.7);
 }
 
 .sale_item_long {
     position: relative;
     grid-column: span 3;
 }
-
-
-
-
 
 .sale__text {
     color: #FFF;
@@ -201,6 +200,7 @@ img {
 .items-subtitle {
     padding-top: 24px;
     padding-bottom: 12px;
+    padding-left: 18px;
     color: #000;
     font-family: Lato;
     font-size: 13px;
@@ -217,6 +217,8 @@ img {
     font-weight: 300;
     line-height: normal;
     padding-bottom: 18px;
+    padding-left: 16px;
+    padding-right: 29px;
 }
 
 .price {
@@ -226,6 +228,7 @@ img {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    padding-left: 18px;
 }
 
 .button {
@@ -254,5 +257,84 @@ img {
 
     .item {
         width: 49%;
+    }
+
+    .main-title {
+        font-size: 24px;
+    }
+
+    .big {
+        font-size: 44px;
+    }
+
+    .sale {
+        padding-bottom: 110px;
+    }
+
+    .items-text {
+        padding-bottom: 73px;
+    }
+
+    .item {
+        margin-bottom: 16px;
+    }
+
+    .items-parent {
+        margin-bottom: 32px;
+    }
+}
+
+@media(max-width:767px) {
+    .center {
+        padding-right: calc(50% - 160px);
+        padding-left: calc(50% - 160px);
+    }
+
+    .fa-user, .fa-cart-shopping,
+    .mobile_display_none {
+        display: none;
+    }
+
+    .big {
+        font-size: 38px;
+    }
+
+    .main-title {
+        font-size: 20px;
+    }
+
+    .main-right {
+        width: 100%;
+        height: 363px;
+        padding: 0 28px;
+    }
+
+    .mobile_small {
+        height: 61px;
+    }
+
+    .sale {
+        grid-template-columns: 100%;
+        padding-bottom: 64px;
+    }
+
+    .sale_item_long {
+        grid-column: span 1;
+        height: 110px;
+        background-image: url("img/acessories.svg");
+        background-position: center;
+        background-size: cover;
+    }
+
+    .items-text {
+        padding-bottom: 65px;
+    }
+
+    .item {
+        width: 100%;
+    }
+
+    .items-parent {
+        margin-bottom: 40px;
     }
 }
