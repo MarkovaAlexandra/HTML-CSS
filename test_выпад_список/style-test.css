@@ -22,3 +22,20 @@ p:hover {
 .dropdown>li {
     cursor: pointer;
 }
+
+.test_before_after:hover {
+    color: blue;
+}
+
+.test_before_after:hover::after {
+    content: "тык сюда";
+    content: url("../pink_maket/img/search\ \(1\).png");
+    padding-right: 50px;
+    color: red;
+}
+
+.test_before_after:hover::before {
+    content: "before";
+    padding-right: 50px;
+    color: red;
+}
